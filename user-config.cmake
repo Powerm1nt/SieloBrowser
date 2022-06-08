@@ -21,8 +21,8 @@
 #-------------------------------------------------------#
 #                      macOS                            #
 #-------------------------------------------------------#
-# set (CMAKE_PREFIX_PATH "/Users/feldrise/Qt/5.11.2/clang_64/") # <Set Path to Qt>
-# set (OPENSSL_DIR "path to openssl") # <OTIONAL : Set the past to custom OpenSSL version>
+set (CMAKE_PREFIX_PATH "/Users/powerm1nt/Qt/5.15.2/clang_64/") # <Set Path to Qt>
+# set (OPENSSL_DIR "path to openssl") # <OPTIONAL : Set the past to custom OpenSSL version>
 
 #-------------------------------------------------------#
 #                      Linux                            # 
