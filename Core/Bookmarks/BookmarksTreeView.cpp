@@ -25,6 +25,7 @@
 #include "BookmarksTreeView.hpp"
 
 #include <QHeaderView>
+#include <QMouseEvent>
 
 #include "Bookmarks/Bookmarks.hpp"
 #include "Bookmarks/BookmarkItem.hpp"

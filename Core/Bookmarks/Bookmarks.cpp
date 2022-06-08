@@ -28,6 +28,7 @@
 
 #include <QJsonParseError>
 #include <QJsonDocument>
+#include <QFile>
 
 #include "Utils/AutoSaver.hpp"
 #include "Utils/DataPaths.hpp"

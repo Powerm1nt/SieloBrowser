@@ -22,6 +22,7 @@
 ** SOFTWARE.                                                                      **
 ***********************************************************************************/
 
+#include <QFile>
 #include "AdBlock/CustomList.hpp"
 
 #include "Application.hpp"
