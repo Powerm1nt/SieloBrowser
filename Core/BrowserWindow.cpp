@@ -697,9 +697,7 @@ void BrowserWindow::postLaunch()
 
 	// Show the "getting started" page if it's the first time Sielo is launch
 	if (!settings.value("installed", false).toBool()) {
-#ifndef QT_DEBUG
-		Application::instance()->piwikTraker()->sendEvent("installation", "installation", "installation", "new installation");
-#endif
+
 		CheckBoxDialog dialog(QMessageBox::Ok, this);
 		dialog.setWindowTitle(tr("Floating Button"));
 		dialog.setText(tr("Do you want to enable floating button? This button can always be enable/disable later in settings."));

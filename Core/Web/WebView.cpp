@@ -384,9 +384,6 @@ void WebView::sLoadFinished(bool ok)
 
 	if (ok) {
 		Application::instance()->history()->addHistoryEntry(this);
-#ifndef QT_DEBUG
-		Application::instance()->piwikTraker()->sendEvent("navigation", "navigation", "page-loaded", "page loaded");
-#endif
 	}
 }
 
