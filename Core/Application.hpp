@@ -36,7 +36,6 @@
 #include <QFont>
 
 #include "3rdparty/SingleApplication/singleapplication.h"
-#include "3rdparty/Piwik/piwiktracker.h"
 
 #include <QWebEngine/WebProfile.hpp>
 #include <QWebEngine/DownloadItem.hpp>
@@ -246,8 +245,6 @@ public:
 
 	Engine::WebProfile *webProfile();
 
-	PiwikTracker *piwikTraker() { return m_piwikTracker; }
-
 	bool fullyLoadThemes() const { return m_fullyLoadThemes; }
 	bool showFloatingButton() const { return m_showFloatingButton; }
 	bool hideToolbarControls() const { return m_hideToolbarControls; }
@@ -365,8 +362,6 @@ private:
 
 	QList<PostLaunchAction> m_postLaunchActions;
 	QHash<QString, SideBarInterface*> m_sidebars;
-
-	PiwikTracker* m_piwikTracker{nullptr};
 
 	QFont m_morpheusFont{};
 	QFont m_normalFont{};
